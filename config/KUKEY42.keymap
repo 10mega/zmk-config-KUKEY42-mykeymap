@@ -73,6 +73,14 @@
 
             tap-ms = <20>;
         };
+
+        // mouse_scroll: 外部モジュール(zmk-pmw3610-driver)のbehaviorを再定義して#sensor-binding-cellsを追加
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
