@@ -116,7 +116,7 @@
 &kp N0            &none              &trans        &none            &none           &trans             &trans         &none              &kp BSPC         &none
             >;
 
-            sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&WheelScroll SCRL_RIGHT SCRL_LEFT>;
         };
 
         // Layer 2: Symbols
