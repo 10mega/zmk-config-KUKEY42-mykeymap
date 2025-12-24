@@ -68,7 +68,7 @@
             #binding-cells = <0>;
             bindings = <&lt NUM F>, <&kp LANGUAGE_2>;
 
-            tapping-term-ms = <160>;
+            tapping-term-ms = <200>;
         };
 
         // TD(1): Tap=J, Hold=MO(1), Double-tap=LANG1
@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             bindings = <&lt NUM J>, <&kp LANGUAGE_1>;
 
-            tapping-term-ms = <160>;
+            tapping-term-ms = <200>;
         };
 
         // TD(2): Tap=Backspace, Hold=MO(2)
@@ -111,7 +111,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W     &kp E             &kp R          &kp T                                                      &kp Y            &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A         &kp S     &kp D             &td_f          &lt FUNC G  &trans                    &mo 6                &lt FUNC H       &td_j  &kp K      &kp L    &kp MINUS
+&mt LCTRL A         &kp S     &kp D             &td_f          &lt FUNC G  &trans                    &mo 6                &lt FUNC H       &td_j  &kp K      &lt 5 L  &kp MINUS
 &mt LSHFT Z         &kp X     &kp C             &kp V          &kp B       &kp LS(LG(NUMBER_4))      &trans               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &mt LEFT_SHIFT TAB  &kp LGUI  &mt LEFT_ALT TAB  &lt SYM SPACE  &kp LGUI    &lt 2 SPACE               &mt RIGHT_GUI ENTER  &lt 2 BACKSPACE                             &kp RIGHT_SHIFT
             >;
@@ -126,7 +126,7 @@
 &kp TAB    &kp N7  &kp N8  &kp N9  &kp ASTRK                      &none  &none     &kp UP    &none      &kp SQT
 &kp LCTRL  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans      &trans  &none  &kp LEFT  &kp UP    &kp RIGHT  &kp COLON
 &kp LSHFT  &kp N1  &kp N2  &kp N3  &kp PRCNT  &trans      &trans  &none  &none     &kp DOWN  &none      &kp BSLH
-&kp N0     &none   &trans  &none   &none      &trans      &trans  &none                                 &kp BSPC
+&kp N0     &none   &kp N0  &none   &none      &trans      &trans  &none                                 &kp BSPC
             >;
 
             sensor-bindings = <&WheelScroll SCRL_RIGHT SCRL_LEFT>;
