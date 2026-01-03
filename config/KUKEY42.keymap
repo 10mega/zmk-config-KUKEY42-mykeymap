@@ -15,9 +15,12 @@
 #define SCROLL  5
 #define SETTING 6
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    quick-tap-ms = <180>;
+};
 
-&lt { quick-tap-ms = <160>; };
+&lt { quick-tap-ms = <195>; };
 
 / {
     combos {
