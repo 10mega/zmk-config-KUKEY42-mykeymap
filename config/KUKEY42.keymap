@@ -160,10 +160,10 @@
 
         sym_layer {
             bindings = <
-&kp ESC  &kp TILDE  &kp QMARK  &kp EXCL  &kp DQT                      &none             &kp LC(LEFT)  &kp LS(LG(L))  &kp LC(RIGHT)     &none
-&kp TAB  &kp AMPS   &kp HASH   &kp AT    &none    &trans      &trans  &none             &none         &none          &mkp MB2          &none
-&none    &none      &none      &none     &none    &trans      &trans  &kp LS(LG(LBKT))  &kp LG(LBKT)  &kp LG(RBKT)   &kp LS(LG(RBKT))  &none
-&none    &none      &trans     &none     &none    &trans      &trans  &mt RGUI ENTER                                                   &kp BSPC
+&kp ESC  &kp TILDE  &kp QMARK  &kp EXCL  &kp DQT                             &none             &kp LC(LEFT)  &kp LS(LG(L))  &kp LC(RIGHT)     &none
+&kp TAB  &kp AMPS   &kp HASH   &kp AT    &none    &trans      &trans         &none             &none         &none          &mkp MB2          &none
+&none    &none      &none      &none     &none    &trans      &trans         &kp LS(LG(LBKT))  &kp LG(LBKT)  &kp LG(RBKT)   &kp LS(LG(RBKT))  &none
+&none    &none      &trans     &none     &none    &trans      &kp RG(ENTER)  &trans                                                           &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -198,7 +198,7 @@
         scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp RCTRL
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
